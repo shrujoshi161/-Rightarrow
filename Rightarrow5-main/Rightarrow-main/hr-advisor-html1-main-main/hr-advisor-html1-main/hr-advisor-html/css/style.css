@@ -146,6 +146,96 @@ a, a:before, button, input[type="button"], input[type="submit"] {
 }
 :active, :focus { outline:0; }
 
+body {
+	
+	margin: 0;
+	padding: 0;
+}
+.container {
+	width: 80%; /* Adjust as needed */
+	margin: 0 auto;
+	padding: 20px;
+	box-sizing: border-box;
+}
+/* Responsive styles */
+@media screen and (max-width: 768px) {
+	.container {
+		width: 90%; /* Adjust for smaller screens */
+	}
+}
+@media screen and (max-width: 480px) {
+	.container {
+		width: 95%; /* Adjust for even smaller screens */
+	}
+}
+ /* Resetting default margin and padding */
+ body, html {
+	margin: 0;
+	padding: 0;
+}
+
+/* Centering content horizontally */
+.container {
+	width: 80%; /* Set your desired width */
+	margin: 0 auto;
+	text-align: center;
+}
+
+/* Centering content vertically */
+.centered {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 100vh; /* Full viewport height */
+}
+
+
+/* Styling for demonstration */
+.box {
+	background-color: #f0f0f0;
+	border: 1px solid #ccc;
+	padding: 20px;
+	border-radius: 5px;
+} 
+
+/* For Android devices */
+@media only screen and (max-width: 767px) and (min-width: 320px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: portrait),
+       only screen and (max-width: 1024px) and (min-width: 768px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: landscape) {
+    /* CSS rules specific to Android devices */
+    .image-containerf {
+        /* Your styles for Android */
+		width: 500px;
+
+		
+    }
+}
+
+/* For Windows devices */
+@media screen and (-ms-high-contrast: active), (-ms-high-contrast: pull-10_12) {
+    /* CSS rules specific to Windows devices */
+    .image-containerf {
+        /* Your styles for Windows */
+		max-width: 2000px;
+    }
+}
+
+
+.menu_mobile {
+	display: none; /* Hide mobile menu by default */
+}
+@media (max-width: 768px) {
+	.menu_mobile_button {
+		display: block; /* Show mobile menu button on small screens */
+	}
+	.menu_mobile {
+		display: block; /* Show mobile menu on small screens */
+		/* Mobile menu styles */
+	}
+}
+ /* Styles for the mobile menu */
+ .menu_mobile {
+    display: flex;
+  }
 
 /* Tables */
 table {
