@@ -167,11 +167,14 @@ body {
 	.container {
 		width: 95%; /* Adjust for even smaller screens */
 	}
+}.content_wrap {
+    width: 100%; /* Ensure the container spans full width */
+    max-width: 100%; /* Ensure the container doesn't exceed viewport width */
 }
- /* Resetting default margin and padding */
- body, html {
-	margin: 0;
-	padding: 0;
+
+.image-container img {
+    width: 100%; /* Make the image fill its container */
+    height: auto; /* Maintain aspect ratio */
 }
 
 /* Centering content horizontally */
