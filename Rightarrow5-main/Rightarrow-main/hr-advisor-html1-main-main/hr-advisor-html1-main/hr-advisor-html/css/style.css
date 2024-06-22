@@ -215,7 +215,7 @@ body {
     /* CSS rules specific to Windows devices */
     .image-containerf {
         /* Your styles for Windows */
-		max-width: 2000px;
+		width: -200%;
     }
 }
 
